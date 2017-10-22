@@ -12,10 +12,8 @@ namespace Quest {
 			Console.ForegroundColor = ConsoleColor.Gray;
 
 			Console.WriteLine();
-			Thread.Sleep(500);
-			Console.WriteLine("1. Поиграть в Доту");
-			Thread.Sleep(500);
-			Console.WriteLine("2. Узнать на каком сайте она застряла");
+            ShowOption("1. Поиграть в Доту");
+            ShowOption("2. Узнать на каком сайте она застряла");
 			int answer1 = int.Parse(Console.ReadLine());
 			Console.WriteLine();
 			if (answer1 == 1) {
@@ -29,19 +27,13 @@ namespace Quest {
 				Console.ForegroundColor = ConsoleColor.Gray;
 			}
 			else {
-				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.WriteLine("Введен невалидный вариант! Конец игры");
-				Console.ReadLine();
-				Environment.Exit(0);
+                ShowInvalidAlert();
 			}
 
 			Console.WriteLine();
-			Thread.Sleep(500);
-			Console.WriteLine("1. Послушаться совета в адресе сайта и поиграть в Доту");
-			Thread.Sleep(500);
-			Console.WriteLine("2. Перейти на сайт");
-			Thread.Sleep(500);
-			Console.WriteLine("3. Обновить антивирус, а потом перейти на сайт");
+            ShowOption("1. Послушаться совета в адресе сайта и поиграть в Доту");
+            ShowOption("2. Перейти на сайт");
+            ShowOption("3. Обновить антивирус, а потом перейти на сайт");
 			int answer2 = int.Parse(Console.ReadLine());
 			Console.WriteLine();
 			if (answer2 == 1) {
@@ -55,24 +47,16 @@ namespace Quest {
 				Environment.Exit(0);
 			}
 			else if (answer2 == 3) {
-				Console.ForegroundColor = ConsoleColor.DarkGreen;
-				Console.WriteLine("Игрок встречает противника - Капча-Монстра, который не дает обновить антивирус. Чтобы его победить, нужно решить задачку: сколько будет 2 + 2 * 2?");
-				Console.ForegroundColor = ConsoleColor.Gray;
+                ShowComment("Игрок встречает противника - Капча-Монстра, который не дает обновить антивирус. Чтобы его победить, нужно решить задачку: сколько будет 2 + 2 * 2?");
 			}
 			else {
-				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.WriteLine("Введен невалидный вариант! Конец игры");
-				Console.ReadLine();
-				Environment.Exit(0);
+                ShowInvalidAlert();
 			}
 
 			Console.WriteLine();
-			Thread.Sleep(500);
-			Console.WriteLine("1. А, ну ее, математика для нубов! Пойду в Доту поиграю!");
-			Thread.Sleep(500);
-			Console.WriteLine("2. Проверить исходный код Капча-Монстра");
-			Thread.Sleep(500);
-			Console.WriteLine("3. Ответить монстру: 6");
+            ShowOption("1. А, ну ее, математика для нубов! Пойду в Доту поиграю!");
+            ShowOption("2. Проверить исходный код Капча-Монстра");
+            ShowOption("3. Ответить монстру: 6");
 			int answer3 = int.Parse(Console.ReadLine());
 			Console.WriteLine();
 			if (answer3 == 1) {
@@ -81,9 +65,7 @@ namespace Quest {
 				Environment.Exit(0);
 			}
 			else if (answer3 == 2) {
-				Console.ForegroundColor = ConsoleColor.DarkGreen;
-				Console.WriteLine("Игрок вскрывает код Капча-Монстра и видит, что тот печатает черным цветом некоторые символы. Ух ты! Их не видно на черном фоне!");
-				Console.ForegroundColor = ConsoleColor.Gray;
+                ShowComment("Игрок вскрывает код Капча-Монстра и видит, что тот печатает черным цветом некоторые символы. Ух ты! Их не видно на черном фоне!");
 			}
 			else if (answer3 == 3) {
 				Console.WriteLine("Конец игры! Проигрыш - было бы слишком легко выиграть! На самом деле там невидимые скобки - это и есть супер-способность Капча-Монстра! Задание выглядит как (2 + 2) * 2");
@@ -91,19 +73,13 @@ namespace Quest {
 				Environment.Exit(0);
 			}
 			else {
-				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.WriteLine("Введен невалидный вариант! Конец игры");
-				Console.ReadLine();
-				Environment.Exit(0);
+                ShowInvalidAlert();
 			}
 
 			Console.WriteLine();
-			Thread.Sleep(500);
-			Console.WriteLine("1. Круто, пойду попробую так в своей программе!");
-			Thread.Sleep(500);
-			Console.WriteLine("2. Ответить монстру: 6");
-			Thread.Sleep(500);
-			Console.WriteLine("3. Заменить цвет всех черных символов на белый и перезагрузить Капчу-Монстра");
+            ShowOption("1. Круто, пойду попробую так в своей программе!");
+            ShowOption("2. Ответить монстру: 6");
+            ShowOption("3. Заменить цвет всех черных символов на белый и перезагрузить Капчу-Монстра");
 			int answer4 = int.Parse(Console.ReadLine());
 			Console.WriteLine();
 			if (answer4 == 1) {
@@ -117,28 +93,19 @@ namespace Quest {
 				Environment.Exit(0);
 			}
 			else if (answer4 == 3) {
-				Console.ForegroundColor = ConsoleColor.DarkGreen;
-				Console.WriteLine("Капча-Монстра хрипит консольными командами, догружается, наконец, до конца и выдает: сколько будет (2 + 2) * 2?");
-				Console.ForegroundColor = ConsoleColor.Gray;
+                ShowComment("Капча-Монстра хрипит консольными командами, догружается, наконец, до конца и выдает: сколько будет (2 + 2) * 2?");
 			}
 			else {
-				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.WriteLine("Введен невалидный вариант! Конец игры");
-				Console.ReadLine();
-				Environment.Exit(0);
+                ShowInvalidAlert();
 			}
 
 			Console.WriteLine();
-			Thread.Sleep(500);
-			Console.WriteLine("1. Ответить монстру: 8");
-			Thread.Sleep(500);
-			Console.WriteLine("2. Герою лень считать, и он идет в Доту");
+            ShowOption("1. Ответить монстру: 8");
+            ShowOption("2. Герою лень считать, и он идет в Доту");
 			int answer5 = int.Parse(Console.ReadLine());
 			Console.WriteLine();
 			if (answer5 == 1) {
-				Console.ForegroundColor = ConsoleColor.DarkGreen;
-				Console.WriteLine("Капча-Монстр обиженно сопит \"Как ты догадался? Я же спрятал скобки!\", отступает и позволяет обновить антивирус. Теперь герой защищен, и может перейти на сайт! Едва он делает это, как получает сообщение антивируса: Замечена и заблокирована вредоносная программа: WinLock 1.0. Файл-лекарство можно найти здесь: C:Antiviruscure.exe.");
-				Console.ForegroundColor = ConsoleColor.Gray;
+                ShowComment("Капча-Монстр обиженно сопит \"Как ты догадался? Я же спрятал скобки!\", отступает и позволяет обновить антивирус. Теперь герой защищен, и может перейти на сайт! Едва он делает это, как получает сообщение антивируса: Замечена и заблокирована вредоносная программа: WinLock 1.0. Файл-лекарство можно найти здесь: C:Antiviruscure.exe.");
 			}
 			else if (answer5 == 2) {
 				Console.WriteLine("Конец игры! Проигрыш - другой хакер спас принцессу");
@@ -146,17 +113,12 @@ namespace Quest {
 				Environment.Exit(0);
 			}
 			else {
-				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.WriteLine("Введен невалидный вариант! Конец игры");
-				Console.ReadLine();
-				Environment.Exit(0);
+                ShowInvalidAlert();
 			}
 
 			Console.WriteLine();
-			Thread.Sleep(500);
-			Console.WriteLine("1.Отправить лекарство принцессе по почте и пойти в Доту");
-			Thread.Sleep(500);
-			Console.WriteLine("2.Записать лекарство на флешку и пойти к принцессе домой");
+            ShowOption("1.Отправить лекарство принцессе по почте и пойти в Доту");
+            ShowOption("2.Записать лекарство на флешку и пойти к принцессе домой");
 			int answer6 = int.Parse(Console.ReadLine());
 			Console.WriteLine();
 			if (answer6 == 1) {
@@ -165,17 +127,33 @@ namespace Quest {
 				Environment.Exit(0);
 			}
 			else if (answer6 == 2) {
-				Console.ForegroundColor = ConsoleColor.DarkGreen;
-				Console.WriteLine("Ура!!! Победа! Ты успешно справился со всеми испытаниями и спас принцессу!");
-				Console.ForegroundColor = ConsoleColor.Gray;
+                ShowComment("Ура!!! Победа! Ты успешно справился со всеми испытаниями и спас принцессу!");
 				Console.ReadLine();
 			}
 			else {
-				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.WriteLine("Введен невалидный вариант! Конец игры");
-				Console.ReadLine();
-				Environment.Exit(0);
+                ShowInvalidAlert();
 			}
 		}
+
+        static void ShowInvalidAlert()
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Введен невалидный вариант! Конец игры");
+            Console.ReadLine();
+            Environment.Exit(0);
+        }
+
+        static void ShowOption(string option)
+        {
+            Thread.Sleep(500);
+            Console.WriteLine(option);
+        }
+
+        static void ShowComment(string comment)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine(comment);
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
 	}
 }
