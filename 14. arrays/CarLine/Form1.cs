@@ -29,7 +29,11 @@ namespace CarLine {
 			graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
 			graphics.Clear(Color.FromArgb(0x44444400));
-			DrawCar(carX, 200);
+
+            for (int y = 200; y < 350; y = y + 50)
+            {
+                DrawCar(carX, y);
+            }
 		}
 
 		private void DrawCar(int x, int y) {
