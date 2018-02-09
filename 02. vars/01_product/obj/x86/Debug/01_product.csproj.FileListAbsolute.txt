@@ -4,3 +4,5 @@ d:\Sources\c#\repos\CSharpLords\Common\02. vars\01_product\obj\x86\Debug\01_prod
 d:\Sources\c#\repos\CSharpLords\Common\02. vars\01_product\obj\x86\Debug\01_product.pdb
 C:\Users\unium\Documents\София Григорьянц\lessons-SofiaGrigoryants\02. vars\01_product\obj\x86\Debug\01_product.exe
 C:\Users\unium\Documents\София Григорьянц\lessons-SofiaGrigoryants\02. vars\01_product\obj\x86\Debug\01_product.pdb
+D:\Мои Документы\Мои документы\GitHub\lessons-SofiaGrigoryants\02. vars\01_product\obj\x86\Debug\01_product.exe
+D:\Мои Документы\Мои документы\GitHub\lessons-SofiaGrigoryants\02. vars\01_product\obj\x86\Debug\01_product.pdb
