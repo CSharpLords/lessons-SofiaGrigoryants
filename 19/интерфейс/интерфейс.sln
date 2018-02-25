@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "интерфейс", "Assembly-CSharp.csproj", "{DE744951-6DCB-97D5-C30B-59DD2385B0BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE744951-6DCB-97D5-C30B-59DD2385B0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE744951-6DCB-97D5-C30B-59DD2385B0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE744951-6DCB-97D5-C30B-59DD2385B0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE744951-6DCB-97D5-C30B-59DD2385B0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
